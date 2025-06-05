@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NEET Test Launch - MPULSE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 80px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #ff7200;
+      margin-bottom: 20px;
+    }
+
+    .countdown {
+      font-size: 36px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .start-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: not-allowed;
+      opacity: 0.6;
+      transition: background 0.3s ease;
+    }
+
+    .start-btn.enabled {
+      cursor: pointer;
+      opacity: 1;
+    }
+
+    .start-btn:hover.enabled {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Get Ready for Your NEET Practice Test</h1>
+  <div class="countdown" id="countdown">10</div>
+  <button id="startButton" class="start-btn" disabled>🚀 Start Test</button>
+</div>
+
+<script>
+  let countdown = 10; // seconds before enabling the button
+  const countdownEl = document.getElementById('countdown');
+  const startBtn = document.getElementById('startButton');
+
+  const timer = setInterval(() => {
+    countdown--;
+    countdownEl.textContent = countdown;
+
+    if (countdown <= 0) {
+      clearInterval(timer);
+      countdownEl.textContent = "Ready!";
+      startBtn.disabled = false;
+      startBtn.classList.add('enabled');
+      startBtn.onclick = () => {
+        window.location.href = "neet-test-start.html"; // your test start page
+      };
+    }
+  }, 1000);
+</script>
+
+</body>
+</html>

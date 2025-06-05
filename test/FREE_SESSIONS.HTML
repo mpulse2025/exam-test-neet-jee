@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book a Free Session - MPULSE Institute</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff7200;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 16px;
+      color: #555;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #ff7200;
+      color: white;
+      padding: 14px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e66000;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #ff7200;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Book a Free Session</h1>
+  <p>Start your success journey with a 100% free one-on-one counseling session at MPULSE.</p>
+
+  <form action="#" method="post">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">Mobile Number</label>
+    <input type="text" id="phone" name="phone" required>
+
+    <label for="email">Email ID</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="course">Interested Course</label>
+    <select id="course" name="course" required>
+      <option value="">-- Select --</option>
+      <option value="NEET">NEET</option>
+      <option value="JEE">JEE</option>
+      <option value="K-CET">K-CET</option>
+      <option value="PUC">PUC</option>
+      <option value="Tuitions">Tuitions</option>
+    </select>
+
+    <label for="message">Additional Notes (Optional)</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Submit & Book Session</button>
+  </form>
+
+  <a href="chatgpt.html" class="back-link">← Go Back to Home</a>
+</div>
+
+</body>
+</html>
