@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NEET Practice Test - 10 Questions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #007bff;
+    }
+    .question {
+      margin-bottom: 1.5rem;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 6px #ccc;
+    }
+    label {
+      display: block;
+      margin: 0.3rem 0;
+      cursor: pointer;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 0.7rem;
+      font-size: 1.1rem;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #result {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-align: center;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>NEET Practice Test - 10 Questions</h1>
+
+  <form id="neetForm">
+    <div class="question" id="q1">
+      <p>1. What is the chemical formula of water?</p>
+      <label><input type="radio" name="q1" value="a" /> H<sub>2</sub>O</label>
+      <label><input type="radio" name="q1" value="b" /> CO<sub>2</sub></label>
+      <label><input type="radio" name="q1" value="c" /> O<sub>2</sub></label>
+      <label><input type="radio" name="q1" value="d" /> NaCl</label>
+    </div>
+
+    <div class="question" id="q2">
+      <p>2. The powerhouse of the cell is?</p>
+      <label><input type="radio" name="q2" value="a" /> Nucleus</label>
+      <label><input type="radio" name="q2" value="b" /> Mitochondria</label>
+      <label><input type="radio" name="q2" value="c" /> Ribosome</label>
+      <label><input type="radio" name="q2" value="d" /> Endoplasmic Reticulum</label>
+    </div>
+
+    <div class="question" id="q3">
+      <p>3. What is the unit of force?</p>
+      <label><input type="radio" name="q3" value="a" /> Pascal</label>
+      <label><input type="radio" name="q3" value="b" /> Newton</label>
+      <label><input type="radio" name="q3" value="c" /> Joule</label>
+      <label><input type="radio" name="q3" value="d" /> Watt</label>
+    </div>
+
+    <div class="question" id="q4">
+      <p>4. DNA stands for?</p>
+      <label><input type="radio" name="q4" value="a" /> Deoxyribonucleic Acid</label>
+      <label><input type="radio" name="q4" value="b" /> Deoxyribose Nucleic Acid</label>
+      <label><input type="radio" name="q4" value="c" /> Dioxyribonucleic Acid</label>
+      <label><input type="radio" name="q4" value="d" /> Deoxynucleic Acid</label>
+    </div>
+
+    <div class="question" id="q5">
+      <p>5. Which vitamin is produced in the skin on exposure to sunlight?</p>
+      <label><input type="radio" name="q5" value="a" /> Vitamin A</label>
+      <label><input type="radio" name="q5" value="b" /> Vitamin B12</label>
+      <label><input type="radio" name="q5" value="c" /> Vitamin C</label>
+      <label><input type="radio" name="q5" value="d" /> Vitamin D</label>
+    </div>
+
+    <div class="question" id="q6">
+      <p>6. What is the SI unit of electric current?</p>
+      <label><input type="radio" name="q6" value="a" /> Volt</label>
+      <label><input type="radio" name="q6" value="b" /> Ampere</label>
+      <label><input type="radio" name="q6" value="c" /> Ohm</label>
+      <label><input type="radio" name="q6" value="d" /> Watt</label>
+    </div>
+
+    <div class="question" id="q7">
+      <p>7. The main component of natural gas is?</p>
+      <label><input type="radio" name="q7" value="a" /> Methane</label>
+      <label><input type="radio" name="q7" value="b" /> Ethane</label>
+      <label><input type="radio" name="q7" value="c" /> Propane</label>
+      <label><input type="radio" name="q7" value="d" /> Butane</label>
+    </div>
+
+    <div class="question" id="q8">
+      <p>8. Photosynthesis occurs in which part of the plant?</p>
+      <label><input type="radio" name="q8" value="a" /> Roots</label>
+      <label><input type="radio" name="q8" value="b" /> Stem</label>
+      <label><input type="radio" name="q8" value="c" /> Leaves</label>
+      <label><input type="radio" name="q8" value="d" /> Flowers</label>
+    </div>
+
+    <div class="question" id="q9">
+      <p>9. Which gas is responsible for the greenhouse effect?</p>
+      <label><input type="radio" name="q9" value="a" /> Oxygen</label>
+      <label><input type="radio" name="q9" value="b" /> Nitrogen</label>
+      <label><input type="radio" name="q9" value="c" /> Carbon Dioxide</label>
+      <label><input type="radio" name="q9" value="d" /> Hydrogen</label>
+    </div>
+
+    <div class="question" id="q10">
+      <p>10. Which blood cells help in fighting infections?</p>
+      <label><input type="radio" name="q10" value="a" /> Red Blood Cells</label>
+      <label><input type="radio" name="q10" value="b" /> White Blood Cells</label>
+      <label><input type="radio" name="q10" value="c" /> Platelets</label>
+      <label><input type="radio" name="q10" value="d" /> Plasma</label>
+    </div>
+
+    <button type="submit">Submit Answers</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    const answers = {
+      q1: "a",
+      q2: "b",
+      q3: "b",
+      q4: "a",
+      q5: "d",
+      q6: "b",
+      q7: "a",
+      q8: "c",
+      q9: "c",
+      q10: "b"
+    };
+
+    const form = document.getElementById('neetForm');
+    const resultDiv = document.getElementById('result');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      let score = 0;
+      let total = Object.keys(answers).length;
+
+      for (let q in answers) {
+        let selected = form.elements[q].value;
+        if (selected === answers[q]) {
+          score++;
+        }
+      }
+
+      resultDiv.textContent = `You scored ${score} out of ${total}`;
+    });
+  </script>
+
+</body>
+</html>

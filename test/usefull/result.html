@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NEET Test Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      background: #f0f8ff;
+      text-align: center;
+      color: #333;
+    }
+    h1 {
+      color: #28a745;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+    a {
+      text-decoration: none;
+      background-color: #007bff;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Your NEET Test Result</h1>
+  <p id="scoreText">Calculating your score...</p>
+  <a href="count down - Copy.html">Try Again</a>
+
+  <script>
+    const score = sessionStorage.getItem('neetScore');
+    const total = sessionStorage.getItem('neetTotal');
+
+    if (score !== null && total !== null) {
+      document.getElementById('scoreText').textContent = `You scored ${score} out of ${total}!`;
+      // Optional: clear storage after reading
+      // sessionStorage.clear();
+    } else {
+      document.getElementById('scoreText').textContent = "No test data found. Please take the test first.";
+    }
+  </script>
+</body>
+</html>

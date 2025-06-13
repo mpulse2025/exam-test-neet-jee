@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NEET Landing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    .landing {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to right, #0052D4, #4364F7, #6FB1FC);
+      color: white;
+      min-height: 100vh;
+    }
+
+    .landing h1 {
+      font-size: 48px;
+    }
+
+    .landing p {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    /* Popup Styles */
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .popup-content {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .popup-content h2 {
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .popup-content button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .popup-content button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="landing">
+  <h1>Welcome to MPULSE NEET Coaching</h1>
+  <p>Your Journey to Medical Success Begins Here</p>
+</div>
+
+<!-- Popup -->
+<div class="popup" id="popupBox">
+  <div class="popup-content">
+    <h2>Choose Your NEET Course</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Normal NEET</th>
+          <th>Advanced NEET</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Difficulty Level</td>
+          <td>Basic to Moderate</td>
+          <td>Moderate to High</td>
+        </tr>
+        <tr>
+          <td>Number of Tests</td>
+          <td>15 Full Tests</td>
+          <td>30 Full + 50 Topic Tests</td>
+        </tr>
+        <tr>
+          <td>Daily Practice</td>
+          <td>Yes</td>
+          <td>Yes (Advanced)</td>
+        </tr>
+        <tr>
+          <td>Doubt Support</td>
+          <td>Limited</td>
+          <td>24x7 Expert Support</td>
+        </tr>
+        <tr>
+          <td>Target Rank</td>
+          <td>Above Cutoff</td>
+          <td>Top 1000 AIR</td>
+        </tr>
+      </tbody>
+    </table>
+    <button onclick="chooseCourse('normal')">Join Normal NEET</button>
+    <button onclick="chooseCourse('advanced')">Join Advanced NEET</button>
+  </div>
+</div>
+
+<script>
+  // Show popup on page load
+  window.onload = function() {
+    document.getElementById("popupBox").style.display = "block";
+  };
+
+  // Handle button clicks
+  function chooseCourse(type) {
+    alert("You selected: " + (type === 'normal' ? 'Normal NEET' : 'Advanced NEET'));
+    document.getElementById("popupBox").style.display = "none";
+
+    // Optional: redirect
+    // window.location.href = type + ".html";
+  }
+</script>
+
+</body>
+</html>
